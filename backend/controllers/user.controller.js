@@ -30,7 +30,7 @@ module.exports.registerUser = async (req, res, next) => {
     console.error('❌ Registration error:', error);
     res.status(500).json({ message: 'Server error', error: error.message });
   }
-};
+}
 
 module.exports.loginUser = async (req, res, next) => {
   const errors = validationResult(req);
@@ -58,4 +58,4 @@ module.exports.loginUser = async (req, res, next) => {
     console.error('❌ Login error:', error);
     res.status(500).json({ message: 'Server error', error: error.message });
   }
-};
+}
